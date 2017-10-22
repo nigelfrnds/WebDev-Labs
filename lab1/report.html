@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type"
+      content="text/html; charset=utf-8" />
+    <title>Technical Report</title>
+  </head>
+  <body>
+    <div>
+      <div style="text-align:center">
+        <h1>Technical Report</h1>
+      </div>
+      <hr>
+      <div>
+        <ul>
+          <li>
+            <div>
+              <h2>Code:</h2>
+              <ul>
+                <li>
+                  <div>
+                    <h4>index.html</h4>
+                    <xmp>
+                      <!DOCTYPE html>
+                      <html>
+                        <head>
+                          <meta http-equiv="Content-type"
+                            content="text/html; charset=utf-8" />
+                          <title>Nigel's Webpage</title>
+                          <!-- I could hide this script, but I put it here on purpose -->
+                          <script>
+                            accessLab1 = () => {
+                              var pass = prompt('Please Enter the Password','');
+                              if(pass !== null) {
+                                if(pass.toLowerCase() == 'password') {
+                                  window.location.href="./lab1";
+                                } else {
+                                  alert('Incorrect Password');
+                                }
+                              } else {
+                                return;
+                              }
+                            }
+                          </script>
+                        </head>
+
+                        <body>
+                          <div>
+                            <div style="text-align:center">
+                              <h1>Nigel Fernandes</h1>
+                              <h3>500679996</h3>
+                            </div>
+                            <hr>
+                            <div>
+                              <h3>Labs:</h3>
+                              <ul>
+                                <li><button style="margin-bottom:5" onclick="accessLab1()">Lab 1</button></li>
+                                <li><button style="margin-bottom:5">Lab 2</button></li>
+                                <li><button style="margin-bottom:5">Lab 3</button></li>
+                                <li><button style="margin-bottom:5">Lab 4</button></li>
+                                <li><button style="margin-bottom:5">Lab 5</button></li>
+                                <li><button style="margin-bottom:5">Lab 6</button></li>
+                                <li><button style="margin-bottom:5">Lab 7</button></li>
+                              </ul>
+                            </div>
+                            <hr>
+                            <div style="text-align:center">
+                            </div>
+                          </div>
+                        </body>
+                      </html>
+                    </xmp>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h4>Lab1/index.html</h4>
+                    <xmp>
+                      <!DOCTYPE html>
+                      <html>
+                        <head>
+                          <meta http-equiv="Content-type"
+                            content="text/html; charset=utf-8" />
+                          <title>Lab 1</title>
+                          <script type="text/javascript">
+                            getValidationReport = () => {
+                              window.open('https://validator.nu/?doc=http%3A%2F%2Fscs.ryerson.ca%2F%7Enjfernan%2F');
+                            }
+                            getTechnicalReport = () => {
+                              window.location.href="report.html";
+                            }
+                          </script>
+                        </head>
+                        <body>
+                          <div>
+                            <div style="text-align:center">
+                              <h1>Lab 1</h1>
+                            </div>
+                            <hr>
+                            <div>
+                              <h3>Here's a list of foods I like:</h3>
+                              <ol>
+                                <li>Pizza</li>
+                                <li>Ice Cream</li>
+                                <li>Chicken</li>
+                                <li>Vegans</li>
+                              </ol>
+                            </div>
+                            <div>
+                              <button type="button" onclick="getValidationReport()">Validation Report</button>
+                              <button type="button" onclick="getTechnicalReport()">Technical Report</button>
+                            </div>
+                          </div>
+                        </body>
+                      </html>
+                    </xmp>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>How did you password protect your page (what method)?</h4>
+              I used a combination of Javascript and HTML to password protect my code. The script for this is stored inside index.html.
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>What new tag did you try? What was its effect?</h4>
+              I used the iframe tag. It allowed me to embed a youtube video onto my website.
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>Does you page look different in different browsers (IE/Edge/Firefox/Chrome/Safari)? If yes, what are the main differences?</h4>
+              I noticed two differences while viewing my webpage on different browers. I noticed that the promp and alert windows were styled differently.
+              I also noticed that the font and text looks a lot cleaner on chrome and safari.
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>How long did you spend on this lab (approximately)?</h4>
+              I spent approximately 1 hour on this lab.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </body>
+</html>

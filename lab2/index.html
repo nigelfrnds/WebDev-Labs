@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type"
+      content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Classic+Comic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <script>
+      getReport = (type) => {
+        if(type === 'valid') {
+          window.open('https://validator.nu/?doc=http%3A%2F%2Fscs.ryerson.ca%2F%7Enjfernan%2Flab2%2Findex.html');
+        } else if (type === 'tech') {
+          window.location.href="report.html";
+        }
+      }
+    </script>
+    <title>Lab 2</title>
+  </head>
+  <body class="img">
+    <main>
+      <div class="container">
+        <div class="content">
+          <div>
+            <p id="title">Welcome To Lab 2,</p>
+            <hr style="margin-top:-40px;">
+            <h2>Author: Nigel Fernandes 500679996</h2>
+          </div>
+          <div>
+            <table>
+              <tr>
+                <th colspan="2">Character</th>
+                <th>Rating</th>
+              </tr>
+              <tr>
+                <td>Winston</td>
+                <td>
+                  <img src="winston.jpg" style="width:75px; height:75px;" alt="Winston Icon" >
+                </td>
+                <td>
+                  <meter value="8" min="0" max="10">8 out of 10</meter>
+                </td>
+              </tr>
+              <tr>
+                <td>McCree</td>
+                <td>
+                  <img src="mcree.png" style="width:100px; height:100px;" alt="McCree Icon" >
+                </td>
+                <td>
+                  <meter value="7" min="0" max="10">7 out of 10</meter>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div>
+            <img id="nyan" src="nyan.png" alt="Nyan Cat">
+          </div>
+          <div class="buttonContainer">
+            <button class="button" onclick="getReport('valid')">Validation Report</button>
+            <button class="button" onclick="getReport('tech')">Technical Report</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

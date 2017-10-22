@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-type"
+      content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <title>Nigel's Webpage</title>
+    <!-- I could hide this script, but I put it here on purpose -->
+    <script>
+    // Internet Explorer 6-11
+    var isIE = /*@cc_on!@*/false || !!document.documentMode;
+    if(isIE){
+      document.getElementById('error').innerHTML = "This webpage is not supported on Internet Explorer, please use another browser.";
+      console.log("HELLOO");
+    }
+
+      function accessLab(labNumber, password){
+        if(password){
+          var pass = prompt('Please Enter the Password','');
+          if(pass !== null) {
+            if(pass.toLowerCase() === password) {
+              window.location.href=`./lab${labNumber}/index.html`;
+            } else {
+              alert('Incorrect Password');
+            }
+          } else {
+            return;
+          }
+        } else {
+          window.location.href=`./lab${labNumber}/index.html`;
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div style="text-align:center">
+        <h1>Nigel Fernandes</h1>
+        <h3>500679996</h3>
+      </div>
+      <hr>
+      <div style="text-align:center">
+        <h5 style="color:red">This webpage is not compatible with Internet Explorer.</h5>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3>Labs</h3>
+        </div>
+        <div class="panel-body">
+          <ul>
+            <li><button type="button" style="margin-bottom:5" class="btn btn-default" onclick="accessLab(1,'password')">Lab 1</button></li>
+            <li><button type="button" style="margin-bottom:5" class="btn btn-default" onclick=accessLab(2,'password')>Lab 2</button></li>
+            <li><button type="button" style="margin-bottom:5" class="btn btn-default" onclick="accessLab(3,null)">Lab 3</button></li>
+            <li><button type="button" style="margin-bottom:5" class="btn btn-default">Lab 4</button></li>
+            <li><button type="button" style="margin-bottom:5" class="btn btn-default">Lab 5</button></li>
+            <li><button type="button" style="margin-bottom:5" class="btn btn-default">Lab 6</button></li>
+            <li><button type="button" style="margin-bottom:5" class="btn btn-default">Lab 7</button></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div style="text-align:center">
+      </div>
+    </div>
+  </body>
+</html>
