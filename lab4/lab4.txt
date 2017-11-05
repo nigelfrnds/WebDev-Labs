@@ -1,0 +1,5 @@
+Lab Link: http://scs.ryerson.ca/~njfernan/
+
+Part 1: http://www2.scs.ryerson.ca/~njfernan/cgi-bin/partone.pl
+
+Part 2: http://scs.ryerson.ca/~njfernan/lab4/part2.html

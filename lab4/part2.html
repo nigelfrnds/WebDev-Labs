@@ -1,0 +1,67 @@
+<!--DOCTYPE html-->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-type"
+      content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="form-center">
+        <div class="panel panel-primary">
+          <div class="panel-heading">GIVE ME YOUR INFO</div>
+          <div class="panel-body">
+            <form action="./cgi-bin/part2.pl" method="post">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  What is your name?:<br><br>
+                  <input type="text" name="name"><br>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  What is your favourite food?:<br><br>
+                  Pizza: <input type="radio" name="food" value="pizza"><br>
+                  Cake: <input type="radio" name="food" value="cake"><br>
+                  Fries: <input type="radio" name="food" value="fries"><br>
+                  Ice-Cream: <input type="radio" name="food" value="ice-cream"><br>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  Complete the sentence:<br>
+                  <b>The TING goes</b><br><br>
+                  skrrraaa: <input type="checkbox" name="rap" value="skkkraaa"><br>
+                  pap pap pap ka ka: <input type="checkbox" name="rap" value="pap pap pap ka ka"><br>
+                  skidipip pap pap: <input type="checkbox" name="rap" value="skidipip pap pap"><br>
+                </div>
+              </div>
+              <div class="panel panel-primary">
+                <div class="panel-body">
+                  Rate Perl out of 5:<br><br>
+                  <select name="perl" size="2" multiple="multiple">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <input type="submit" value="Submit">
+              </div>
+              <div>
+              </div>
+            </form>
+          </div>
+        <div>
+      </div>
+    </div>
+  </body>
+</html>

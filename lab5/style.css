@@ -1,0 +1,18 @@
+td {
+  text-align: center;
+  height: 50px;
+  width: 50px;
+}
+
+th {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+  background-color: blue;
+}
+
+.center {
+  text-align: center;
+}
